@@ -1,0 +1,18 @@
+# ==========================================
+# Recommended hyperparameters for Pong
+# ==========================================
+
+# 1. Total training steps: 1 M steps (~4 M frames)
+#    10k steps typically converges to ~-19; 1 M steps reliably reaches +21.
+total_steps = 1000000
+
+# 2. Exploration schedule
+#    Linear epsilon decay over the first 10% of training (100k steps).
+decay_period = 100000
+final_eps = 0.01
+
+# 3. Replay buffer
+MEMORY_SIZE = 100000
+
+# 4. Discount factor  — default 0.99 works well for Pong's short episodes.
+final_gamma = torch.tensor(1-0.99).log()

@@ -1,0 +1,40 @@
+# ── Personal / submission files ──────────────────────────────────────────────
+报告*.pdf
+README+*.txt
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+conda-env/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Weights & Biases ─────────────────────────────────────────────────────────
+wandb/
+
+# ── Checkpoints (large binary files) ─────────────────────────────────────────
+Value-Based/sota/checkpoints/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

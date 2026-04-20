@@ -1,0 +1,22 @@
+﻿# ==========================================
+# Recommended hyperparameters for VideoPinball
+# ==========================================
+
+# 1. Total training steps: 2 M steps (~8 M frames)
+#    The agent needs extended training to discover the high-value camping strategy.
+total_steps = 2000000
+
+# 2. Exploration schedule
+#    Slow epsilon decay to encourage thorough exploration; keep a non-zero floor.
+decay_period = 200000
+final_eps = 0.01
+
+# 3. Replay buffer: larger is better when memory allows.
+MEMORY_SIZE = 200000
+
+# 4. Reset schedule
+reset_every = 200000         # reset noisy params / n-step every 200k grad steps
+schedule_max_step = 50000    # anneal n-step from 10 to 3 over 50k steps
+
+# 5. Discount factor -- fix gamma high for the long-horizon pinball episodes.
+final_gamma = torch.tensor(1-0.99).log()

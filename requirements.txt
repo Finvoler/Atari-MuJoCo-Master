@@ -1,0 +1,19 @@
+# Core DL & Math
+torch>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Reinforcement Learning & Environments
+gymnasium[atari,accept-rom-license]>=0.29.0
+ale-py>=0.8.0
+mujoco>=3.0.0
+
+# Visualization & Logging
+matplotlib>=3.7.0
+tqdm>=4.65.0
+wandb>=0.15.0
+
+# Advanced Model Utilities (for SOTA / Rainbow)
+torchvision>=0.15.0
+einops>=0.6.0
