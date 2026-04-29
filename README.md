@@ -1,6 +1,6 @@
 # Atari-MuJoCo-Master
 
-A unified deep reinforcement learning benchmark covering both **discrete control** (Atari ALE) and **continuous control** (MuJoCo), progressing from textbook baselines to a novel hybrid agent that combines distributional RL, latent world-model self-supervision, and adaptive curriculum scheduling.
+A unified deep reinforcement learning benchmark covering both **discrete control** (Atari ALE) and **continuous control** (MuJoCo), progressing from textbook baselines to a novel hybrid agent that combines distributional RL, latent world-model self-supervision, and adaptive curriculum scheduling
 
 ---
 
